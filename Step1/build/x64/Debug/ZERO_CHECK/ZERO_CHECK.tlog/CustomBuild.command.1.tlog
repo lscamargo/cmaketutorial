@@ -1,0 +1,10 @@
+^C:\USERS\USER\DOCUMENTS\CMAKE-3.21.1\HELP\GUIDE\TUTORIAL\STEP1\BUILD\CMAKEFILES\6841F72BEAF6A656E33D49FBA3ACCDE3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/cmake-3.21.1/Help/guide/tutorial/Step1 -BC:/Users/User/Documents/cmake-3.21.1/Help/guide/tutorial/Step1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/Documents/cmake-3.21.1/Help/guide/tutorial/Step1/build/SQRT.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
